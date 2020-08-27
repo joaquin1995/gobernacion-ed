@@ -73,16 +73,16 @@ class NavOne extends Component {
                         <div className="logo-box clearfix">
                             <Link href="/">
                                 <a className="navbar-brand">
-                                    <img src="/assets/images/logo4.png" className="main-logo" width="150" 
+                                    <img src="/assets/images/Recurso4.png" className="main-logo" width="120"
                                          alt="Awesome Image" />
                                 </a>
                             </Link>
-                            <div className="header__social">
-                                {/* <a href="#"><i className="fab fa-twitter"></i></a>
+                            {/* <div className="header__social">
+                                <a href="#"><i className="fab fa-twitter"></i></a>
                                 <a href="#"><i className="fab fa-facebook-square"></i></a>
                                 <a href="#"><i className="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a> */}
-                            </div>
+                                <a href="#"><i className="fab fa-instagram"></i></a>
+                            </div> */}
                             <button className="menu-toggler">
                                 <span className="kipso-icon-menu"></span>
                             </button>
@@ -92,7 +92,7 @@ class NavOne extends Component {
                                 <li className="current">
                                     <Link href="/"><a>Inicio</a></Link>
                                     <ul className="sub-menu">
-                                    <li><Link href="/"><a>¿Qué es Santa Cruz Educa?</a></Link></li>
+                                    <li><Link href="/santa-cruz"><a>¿Qué es Santa Cruz Educa?</a></Link></li>
 
                                         <li><Link href="/"><a>¿Quiénes Somos?</a></Link></li>
                                         <li><Link href="/index-2"><a>Nuestros Aliados</a></Link></li>
@@ -108,19 +108,19 @@ class NavOne extends Component {
                                 </li>
                                 <li>
                                     <a href="#">¿Quiéres Aprender?</a>
-                                    <ul className="sub-menu">
+                                    {/* <ul className="sub-menu">
                                         <li><Link href="/about"><a>About Page</a></Link></li>
                                         <li><Link href="/gallery"><a>Gallery</a></Link></li>
                                         <li><Link href="/pricing"><a>Pricing Plans</a></Link></li>
                                         <li><Link href="/faq"><a>FAQ'S</a></Link></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li>
                                     <a href="/courses">¿Quiéres Enseñar?</a>
-                                    <ul className="sub-menu">
+                                    {/* <ul className="sub-menu">
                                         <li><Link href="/courses"><a>Courses</a></Link></li>
                                         <li><Link href="/course-details"><a>Courses Details</a></Link></li>
-                                    </ul>
+                                    </ul> */}
                                 </li>
                                 <li>
                                     <Link href="/teachers"><a>Biblioteca Digital</a></Link>

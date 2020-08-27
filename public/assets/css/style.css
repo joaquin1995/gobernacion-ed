@@ -295,7 +295,7 @@ a:visited {
 * 2. header styles
 */
 .topbar-one {
-  background-color: #022c46;
+  background-color: #00773f;
 }
 .topbar-one .container {
   padding-top: 6.5px;
@@ -362,6 +362,9 @@ a:visited {
 .header-navigation .container .menu-toggler {
   display: none;
 }
+
+
+
 .header-navigation .container .right-side-box {
   position: absolute;
   top: 50%;
@@ -651,7 +654,8 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 90px;
+  margin-left: 950px;
+  /* margin-right: ; */
   margin-top: 5px;
 }
 .header__social a {
@@ -986,7 +990,7 @@ a:visited {
   color: #fff;
 }
 .banner-one__title {
-  font-size: 140px;
+  font-size: 120px;
   line-height: 120px;
   color: #ffffff;
   font-weight: 700;
@@ -1068,7 +1072,7 @@ a:visited {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  background-color: #1888c9;
+  background-color: #004631;
   top: 20%;
   left: -3%;
   -webkit-animation-name: bubbleMoveOne;
@@ -1081,7 +1085,7 @@ a:visited {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background-color: #7c4bc0;
+  background-color: #bedb8b;
   right: 35%;
   top: 20%;
   -webkit-animation-name: bubbleMoveTwo;
@@ -1094,7 +1098,7 @@ a:visited {
   width: 106px;
   height: 106px;
   border-radius: 50%;
-  border: 24px solid #33a9bb;
+  border: 24px solid #55a546;
   right: 35%;
   bottom: 10%;
   -webkit-animation-name: globeRotate;
@@ -6410,3 +6414,59 @@ html {
 	font-size: 53px;
 	cursor: pointer;
 }
+
+
+@media (max-width:411px) {
+  .banner-one__title {
+    font-size: 50px !important;
+    /* z-index: 9999999 !important; */
+  }
+
+  .banner-one__tag-line{
+    font-size: 50px !important;
+
+  }
+
+}
+
+.fab {
+  color: white !important;
+}
+
+.info{
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.info h1::after {
+  height: .4rem;
+  width: 100%;
+  background-color: #4c9931;
+  display: block;
+  content: '';
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+.info p::after {
+  height: .4rem;
+  width: 100%;
+  background-color: #4c9931;
+  display: block;
+  content: '';
+  margin: 1rem auto 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+
+  
+
+
+
+

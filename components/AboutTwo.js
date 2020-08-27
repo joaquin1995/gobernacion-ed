@@ -24,14 +24,10 @@ export default class AboutTwo extends Component {
                         <div className="col-xl-6">
                             <div className="about-two__content">
                                 <div className="block-title text-left">
-                                    <h2 className="block-title__title">¿Quiénes Somos?<br />
+                                    <h2 className="block-title__title">¿Cómo Funciona?<br />
                                     </h2>
                                 </div>
-                                <p className="about-two__text">There are many variations of passages of lorem ipsum
-                                    available but the
-                                    majority have suffered alteration in some form by injected humour or randomised
-                                    words which
-                                    don't look.</p>
+                                <p className="about-two__text">Santa Cruz Educa es un espacio abierto de fomento al conocimiento. Se construye a partir con aportes voluntarios de expertos en temáticas concretas que desean difundir su experiencia y capacidades...</p>
                                 <div className="about-two__single-wrap">
                                     <div className="about-two__single">
                                         <div className="about-two__single-icon">
