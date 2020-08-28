@@ -3,18 +3,18 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import Footer from "../components/Footer";
 import Topbar from "../components/Topbar";
-import SantaCruzEducaInfo from "../components/SantaCruzEducaInfo";
+import ComoFunciona from "../components/ComoFunciona";
 
 
-const SantaCruzPage = () => {
+const ComoFuncionaPage = () => {
     return (
         <Layout pageTitle="Santa Cruz Educa">
              <Topbar />
             <NavOne />
-            <SantaCruzEducaInfo />
+            <ComoFunciona />
             <Footer />
         </Layout>
     );
 };
 
-export default SantaCruzPage;
+export default ComoFuncionaPage;

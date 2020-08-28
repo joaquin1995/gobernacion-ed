@@ -47,7 +47,7 @@ export default class AboutTwo extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <a href="#" className="thm-btn">Learn More</a>
+                                <a href="/como-funciona" className="thm-btn">Aprede más</a>
                             </div>
                         </div>
                         <div className="col-xl-6 d-flex justify-content-xl-end justify-content-sm-center">
