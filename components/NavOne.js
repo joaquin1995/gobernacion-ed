@@ -73,7 +73,7 @@ class NavOne extends Component {
                         <div className="logo-box clearfix">
                             <Link href="/">
                                 <a className="navbar-brand">
-                                    <img src="/assets/images/Recurso4.png" className="main-logo" width="120"
+                                    <img src="/assets/images/Recurso4.png" className="main-logo" width="120" 
                                          alt="Awesome Image" />
                                 </a>
                             </Link>
@@ -116,7 +116,7 @@ class NavOne extends Component {
                                     </ul> */}
                                 </li>
                                 <li>
-                                    <a href="/courses">¿Quiéres Enseñar?</a>
+                                    <a href="/formulario-docente">¿Quiéres Enseñar?</a>
                                     {/* <ul className="sub-menu">
                                         <li><Link href="/courses"><a>Courses</a></Link></li>
                                         <li><Link href="/course-details"><a>Courses Details</a></Link></li>

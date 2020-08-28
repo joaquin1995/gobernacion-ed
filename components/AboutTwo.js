@@ -31,19 +31,42 @@ export default class AboutTwo extends Component {
                                 <div className="about-two__single-wrap">
                                     <div className="about-two__single">
                                         <div className="about-two__single-icon">
-                                            <i className="kipso-icon-professor"></i>
+                                            {/* <i className="kipso-icon-professor"></i> */}
+                                            <i className="kipso-icon-training"></i>
+
                                         </div>
                                         <div className="about-two__single-content">
-                                            <p className="about-two__single-text">Start learning from
-                                                our experts</p>
+                                            <p className="about-two__single-text">Experto</p>
                                         </div>
                                     </div>
                                     <div className="about-two__single">
                                         <div className="about-two__single-icon">
-                                            <i className="kipso-icon-knowledge"></i>
+                                            {/* <i className="kipso-icon-knowledge"></i> */}
+                                            <i className="fas fa-user-graduate"></i>
                                         </div>
                                         <div className="about-two__single-content">
-                                            <p className="about-two__single-text">Biblioteca Virtual</p>
+                                            <p className="about-two__single-text">Estudiante</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="about-two__single">
+                                        <div className="about-two__single-icon">
+                                            {/* <i className="kipso-icon-knowledge"></i> */}
+                                            <img src="/assets/images/favicons/log-family.png" height="75" alt="" />
+                                        </div>
+                                        <div className="about-two__single-content">
+                                            <p className="about-two__single-text">Familia</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div className="about-two__single">
+                                        <div className="about-two__single-icon">
+                                            {/* <i className="kipso-icon-knowledge"></i> */}
+                                            <i className="fas fa-chalkboard-teacher"></i>
+                                        </div>
+                                        <div className="about-two__single-content">
+                                            <p className="about-two__single-text">Docente</p>
                                         </div>
                                     </div>
                                 </div>
@@ -53,7 +76,7 @@ export default class AboutTwo extends Component {
                         <div className="col-xl-6 d-flex justify-content-xl-end justify-content-sm-center">
                             <div className="about-two__image">
                                 <span className="about-two__image-dots"></span>
-                                <img src="/assets/images/about-1-1.jpg" alt="" />
+                                <img src="/assets/images/como-funciona.png" height="529" width="529" alt="" />
                                     <div className="about-two__count">
                                         <div className="about-two__count-text">Trusted by
                                             <span className="counter">

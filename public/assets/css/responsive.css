@@ -1025,10 +1025,25 @@
 }
 
 
+@media (min-width:1100px){
+  .header-navigation .container .navbar-brand{
+    /* width:"250"; 
+    height:"100" */
+    margin: -73px;
+  }
+
+  .header-navigation .container .navbar-brand img{
+    width:250px; 
+    height:72.5px;
+  }
+}
+
 @media (max-width:1119px) {
   .header-navigation .container .menu-toggler {
     margin-left: 600px;
   }
+
+  
 
   /* .header__social {
     margin-left: 700px !important;
