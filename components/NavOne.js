@@ -107,7 +107,7 @@ class NavOne extends Component {
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">¿Quiéres Aprender?</a>
+                                    <a href="/formulario-estudiante">¿Quiéres Aprender?</a>
                                     {/* <ul className="sub-menu">
                                         <li><Link href="/about"><a>About Page</a></Link></li>
                                         <li><Link href="/gallery"><a>Gallery</a></Link></li>

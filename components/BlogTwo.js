@@ -40,8 +40,7 @@ const BlogTwo = () => {
         <section className="blog-two">
             <div className="container">
                 <div className="block-title text-center">
-                    <h2 className="block-title__title">Our latest news <br />
-                        & articles</h2>
+                    <h2 className="block-title__title">Nuestros Artículos <br /></h2>
                 </div>
                 <div className="blog-two__carousel">
                     <Swiper {...params}>

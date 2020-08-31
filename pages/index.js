@@ -27,8 +27,8 @@ const HomePage = () => (
       <VideoTwo />
       <CountdownKipso />
       <CourseCatOne />
-      <CallToActionThree />
-      <BrandsTwo />
+      {/* <CallToActionThree /> */}
+      {/* <BrandsTwo /> */}
       <BlogTwo />
       <CallToActionFour />
       <SubscribeOne />

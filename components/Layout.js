@@ -21,6 +21,8 @@ const Layout = (props) => {
 
                 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,500i,600,700,800%7CSatisfy&display=swap" rel="stylesheet" />
                 <link rel="stylesheet" href="/assets/plugins/bootstrap/bootstrap.min.css" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+
                 <link rel="stylesheet" href="/assets/css/animate.min.css" />
                 <link rel="stylesheet" href="/assets/plugins/fontawesome-free-5.11.2-web/css/all.min.css" />
                 <link rel="stylesheet" href="/assets/plugins/kipso-icons/style.css" />
@@ -36,7 +38,13 @@ const Layout = (props) => {
             </div>
 
             <script src="/assets/plugins/bootstrap/jquery.min.js"></script>
-            <script src="/assets/plugins/bootstrap/bootstrap.min.js"></script>
+            <script src="/assets/plugins/bootstrap/bootstrap.min.js"></script>  
+
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+
+            <script src="/assets/js/app.js"></script>
+            
 
         </div>
     );

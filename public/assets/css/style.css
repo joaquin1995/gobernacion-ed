@@ -2136,10 +2136,10 @@ a:visited {
 .cta-four {
   padding-top: 120px;
   padding-bottom: 472px;
-  background-image: url(../images/teacher-1-1.jpg);
+  background-image: url(../images/gob-educa.png);
   background-repeat: no-repeat;
   background-position: bottom center;
-  background-size: cover;
+  background-size: auto;
   position: relative;
 }
 .cta-four__stripe {
@@ -5813,7 +5813,7 @@ a:visited {
 .video-two {
   position: relative;
   padding: 120px 0;
-  background-image: url(../images/video-bg-1-1.jpg);
+  background-image: url(../images/gob-educa.png);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
@@ -6529,6 +6529,19 @@ html {
   display: none !important;
 }
 
+.info-left{
+  text-align: unset !important;
+}
+
+
+.bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+  width: 100%;
+}
+
+.sub{
+  font-size: 12px;
+  font-weight: bold;
+}
 
 
   

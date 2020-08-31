@@ -3,7 +3,7 @@ import React from 'react';
 const CallToActionFour = () => {
     return (
         <section className="cta-four">
-            <img src="assets/images/circle-stripe-1.png" className="cta-four__stripe" alt="" />
+            {/* <img src="assets/images/circle-stripe-1.png" className="cta-four__stripe" alt="" />
             <img src="assets/images/line-stripe-1.png" className="cta-four__line" alt="" />
             <div className="container text-center">
                 <div className="block-title">
@@ -16,7 +16,7 @@ const CallToActionFour = () => {
                         eis sed odio sit
                         amet.
                 </p>
-            </div>
+            </div> */}
         </section>
     );
 };

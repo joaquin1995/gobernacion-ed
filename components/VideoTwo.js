@@ -16,7 +16,7 @@ export default class VideoTwo extends Component {
     render() {
         return (
             <section className="video-two">
-                <div className="container">
+                {/* <div className="container">
                     <img src="/assets/images/scratch-1-1.png" className="video-two__scratch" alt="" />
                         <div className="row">
                             <div className="col-lg-7">
@@ -35,7 +35,7 @@ export default class VideoTwo extends Component {
                                 </div>
                             </div>
                         </div>
-                </div>
+                </div> */}
             </section>
         );
     }
