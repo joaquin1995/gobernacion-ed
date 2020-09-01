@@ -1,6 +1,8 @@
 import React,{useState} from 'react';
 import FormularioApoderado from './FormularioApoderado';
 
+
+
 const FormularioEstudiante = () => {
     
 
@@ -28,7 +30,7 @@ const FormularioEstudiante = () => {
         const fecha = e.target.value;
         const edad = calcularEdad(fecha);
         console.log(edad);
-        if(edad >= 18){
+        if(edad < 18){
             guardarApoderado(true);
             return;
         }

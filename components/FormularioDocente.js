@@ -1,8 +1,31 @@
-import React from 'react';
-
+import React,{useState} from 'react';
+import InputDinamico from './InputDinamico';
 
 const FormularioDocente = () => {
+    /* inputs para poder generar dinamicametne 3 profesiones */
+    const [inputUno , guardarInputUno ]= useState(false);
+    const [inputDos, guardarInputdos ] = useState(false);
+    const [inputTres, guardarInputTres ] = useState(false);
+    const [inputProfesional,guardarInput] = useState(0);
+
+ 
+
+    const agregarInput = ()=>{
+        console.log('click');
+        const cantida = 3;
+        const valor = inputProfesional;
+        console.log(valor);
+        if(valor !== cantida){
+            const aux = valor + 1;
+            guardarInput(aux);
+            if(aux === 1) guardarInputUno(true);
+            else if(aux === 2) guardarInputdos(true);
+            else guardarInputTres(true);
+        };   
+    }
     
+
+
     return (  
 
       <div className="info info-left">
@@ -131,12 +154,22 @@ const FormularioDocente = () => {
                                 <input type="text" id="Profesion" name="title[]" className="form-control m-input"
                                     autoComplete="off" />
                                 <div className="input-group-append">
-                                    <button id="addRow" type="button" className="btn btn-info">+</button>
+                                    <button 
+                                    id="addRow" 
+                                    type="button" 
+                                    className="btn btn-info"
+                                    onClick={agregarInput}
+                                    >+
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="newRow"></div>
+                            <div id="newRow">
+                                { inputUno ? <InputDinamico nombre="Profesíon" eliminar ={guardarInputUno}  guardarInput= {guardarInput} inputProfesional={inputProfesional}/> : null }
+                                { inputDos ? <InputDinamico nombre="Profesíon"  eliminar ={guardarInputdos} guardarInput= {guardarInput}  inputProfesional={inputProfesional}/> : null }
+                                { inputTres ? <InputDinamico nombre="Profesíon"  eliminar ={guardarInputTres} guardarInput= {guardarInput}  inputProfesional={inputProfesional}/> : null }
+                            </div>
                     </div>
                     <div className="form-group col-md-6">
                     <div id="inputFormRow">
