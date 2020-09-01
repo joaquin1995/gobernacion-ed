@@ -1,8 +1,41 @@
-import React from 'react';
-
+import React,{useState} from 'react';
+import FormularioApoderado from './FormularioApoderado';
 
 const FormularioEstudiante = () => {
     
+
+    const [datosApoderado,guardarApoderado] = useState(false);
+
+    // funcion para calcular la edad
+    // Todo: poner este codigo dentro de una helper y no se vea muy 
+    // cargado el componente
+
+    const calcularEdad = (fecha)=> {
+        console.log('fecha',fecha);
+        var hoy = new Date();
+        var cumpleanos = new Date(fecha);
+        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+        var m = hoy.getMonth() - cumpleanos.getMonth();
+    
+        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+            edad--;
+        }
+    
+        return edad;
+    } 
+
+    const obtenerFecha = e =>{
+        const fecha = e.target.value;
+        const edad = calcularEdad(fecha);
+        console.log(edad);
+        if(edad >= 18){
+            guardarApoderado(true);
+            return;
+        }
+        guardarApoderado(false);
+    };
+
+
     return (  
 
       <div className="info info-left">
@@ -47,7 +80,12 @@ const FormularioEstudiante = () => {
                 <div className="form-row">
                     <div className="form-group col-md-6">
                     <label htmlFor="FechaNacimiento">Fecha de Nacimiento</label>
-                    <input type="date" className="form-control" id="FechaNacimiento" />
+                    <input 
+                    type="date" 
+                    className="form-control"
+                    id="FechaNacimiento" 
+                    onChange={obtenerFecha} 
+                    />
                     </div>
                     <div className="form-group col-md-6">
                     <label htmlFor="Ci">Carnet de Identidad</label>
@@ -91,13 +129,26 @@ const FormularioEstudiante = () => {
                 </div>
 
 
-                {/* <div className="form-row">
-                    <div className="row">
-                    <div className="col-md-12">
+                <div className="form-row">
+                    <div className="form-group col-md-6">
+                    <div id="inputFormRow">
+                    <label htmlFor="NivelEducacion">Nivel Educativo </label>
+                   
+                   <select id="NivelEducacion" className="form-control" >
+                       <option key="" value="">-- Seleccione una opcion --</option>
+                       <option key="1" value="">Primario</option>
+                       <option key="2" value="">Secundario</option>
+                       <option key="3" value="">Técnico</option>
+                       <option key="4" value="">Profesional</option>
+                      
+                   </select>
+                        </div>
 
-        
-                        <div id="inputFormRow">
-                        <label htmlFor="Profesion">Profesion</label>
+                        <div id="newRow"></div>
+                    </div>
+                    <div className="form-group col-md-6">
+                    <div id="inputFormRow">
+                        <label htmlFor="Profesion">Habla Otros Idiomas</label>
                             <div className="input-group mb-3">
                             
                                 <input type="text" id="Profesion" name="title[]" className="form-control m-input"
@@ -109,37 +160,13 @@ const FormularioEstudiante = () => {
                         </div>
 
                         <div id="newRow"></div>
-
                     </div>
-
-                </div>
-            </div> */}
-
-            
-
-        
-                {/* <div className="form-group">
-                    <label htmlFor="inputAddress2">Address 2</label>
-                    <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" />
-                </div> */}
                 
+                </div>
+                {/* componente del Formulario de apoderados */}
+                { datosApoderado ? <FormularioApoderado /> :  null  }
 
 
-             
-
-
-               
-
-
-
-                {/* <div className="form-group">
-                    <div className="form-check">
-                    <input className="form-check-input" type="checkbox" id="gridCheck" />
-                    <label className="form-check-label" htmlFor="gridCheck">
-                        Check me out
-                    </label>
-                    </div>
-                </div> */}
                 <button type="submit" className="btn btn-primary">Guardar</button>
             </form>
       </div>

@@ -22,9 +22,3 @@ $(document).on('click', '#removeRow', function () {
 
 
 
-
-document.addEventListener("DOMContentLoaded", function(event) {
-
-    $('.selectpicker').selectpicker();
-});
-

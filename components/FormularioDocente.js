@@ -252,7 +252,7 @@ const FormularioDocente = () => {
                     </div>
                     <div className="form-group col-md-6">
                     <label htmlFor="duracion">¿Duración de cada curso?</label>
-                    <p className="sub">(Cada curso dure entre 15 minutos a 1 hora</p>
+                    <p className="sub">(Cada curso dure entre 15 minutos a 1 hora)</p>
                     <input type="number" className="form-control" id="duracion" />
                     </div>
                 </div>
