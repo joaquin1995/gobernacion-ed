@@ -4,6 +4,18 @@ import 'swiper/css/swiper.css';
 
 const SliderOne = () => {
 
+    const params = {
+        
+        loop: true,
+        speed: 1000,
+        spaceBetween : 30,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        }
+    }
+
+
     const [swiper, setSwiper] = useState(null);
 
     const goNext = () => {
@@ -23,7 +35,12 @@ const SliderOne = () => {
         <div className="banner-wrapper">
             <section className="banner-one banner-carousel__one no-dots">
 
-                <Swiper getSwiper={setSwiper}>
+                <Swiper 
+                getSwiper={setSwiper}
+                {...params}
+                >
+                {/* <Swiper {...params}> */}
+
                     <div className="banner-one__slide banner-one__slide-one">
                         <div className="container">
                             <div className="banner-one__bubble-1"></div>

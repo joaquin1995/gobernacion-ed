@@ -22,10 +22,11 @@ const HomePage = () => (
       <Topbar />
       <NavOne />
       <SliderOne />
+      <CountdownKipso />
       <AboutTwo />
       <CourseOne />
       <VideoTwo />
-      <CountdownKipso />
+      {/* <CountdownKipso /> */}
       <CourseCatOne />
       {/* <CallToActionThree /> */}
       {/* <BrandsTwo /> */}

@@ -1,17 +1,19 @@
 import React from 'react';
 
-const InputDinamico = ({nombre,eliminar,guardarInput, inputProfesional}) => {
+const InputDinamico = ({nombre,eliminar,guardarInput, inputProfesional,arrayObjetoProfesional,idButtonProfesional,valMinimo}) => {
 
     if(nombre.length === 0) return;
  
-    const cambiarEstado = () =>{
+    const cambiarEstado = e =>{
         eliminar(false);
-        
+        console.log(e.target.id); 
         const valor = inputProfesional;
-        if(valor !== 0 ){
+        if(valor !== valMinimo ){
             console.log(valor);
             const aux = valor - 1;
             guardarInput(aux);
+            let i = arrayObjetoProfesional.indexOf( Number(e.target.id) );
+            arrayObjetoProfesional.splice( i, 1 );       
         }
     }
 
@@ -27,11 +29,12 @@ const InputDinamico = ({nombre,eliminar,guardarInput, inputProfesional}) => {
                 placeholder={nombre} 
                 autoComplete="off"
                 />
-                <div className="input-group-append">
-                    <button id="removeRow" 
+                <div className="input-group-append" >
+                    <button
                     type="button" 
                     className="btn btn-danger"
                     onClick={cambiarEstado}
+                    id={idButtonProfesional}
                     >-
                     </button>
                 </div>
