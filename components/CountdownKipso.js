@@ -1,7 +1,56 @@
-import React, {Component} from 'react';
-import Countdown from 'react-countdown';
+import React, {Component, useState} from 'react';
+import Link  from 'next/link';
+import { useRouter } from 'next/router';
+
 
 const CountdownKipso = () => {
+    const router = useRouter();
+
+    const [registro,guardarRegistro] = useState({
+        nombres: '',
+        apellidos: '',
+        email: '',
+        telefono: '',
+        formulario: ''
+    });
+
+    const [error, guardarError ] = useState(false);    
+    const { nombres,apellidos,email,telefono,formulario } = registro;
+
+    const formularioSeleccionado = e =>{
+        console.log(e.target.value);
+        guardarRegistro({
+            ...registro,
+            [e.target.name] : e.target.value
+        });
+    }
+
+
+    const enviarFormulario = e =>{
+//   return <span onClick={() => router.push('/about')}>Click me</span>
+
+        e.preventDefault();
+       
+        
+        if(nombres.trim() === '' || apellidos.trim() === '' || 
+            email.trim() === '' || telefono.trim() === '' || formulario.trim() === ''){
+            guardarError(true);
+            return;
+        }
+
+        guardarError(false);
+
+        // if(formulario === 'docente')  router.push('/formulario-docente');
+        // else router.push('/formulario-estudiante');
+
+        if(formulario === 'docente') router.push('/formulario-docente',{ state: { id: 7, color: 'green' } });
+        else router.push('/formulario-estudiante');
+
+
+        
+
+    }
+
 
     return (
         <section className="countdown-one">
@@ -9,37 +58,90 @@ const CountdownKipso = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="countdown-one__content">
-                            <h2 className="countdown-one__title">Registrate Ahora </h2>
-                            <p className="countdown-one__tag-line">Para Aprender Nuevos Conocimientos</p>
-                            <p className="countdown-one__text">Lorem ipsum gravida nibh vel velit auctor aliquetnean
-                                sollicitudin,
-                                lorem
-                                quis bibendum auci elit consequat is simply free text available in the psutis sem
-                                nibh id eis
-                                sed
-                                odio sit amet.</p>
-                            <div className="countdown-one__list list-unstyled">
+                            <h2 className="countdown-one__title">Regístrate Ahora </h2>
+                            <p className="countdown-one__tag-line">Para Aprender Nuevos Conocimientos o Compartirlos.</p>
+                            <p className="countdown-one__text"></p>
+                            {/* <div className="countdown-one__list list-unstyled">
 
                                 <Countdown date={Date.now() + 5000000000} />
 
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="col-lg-6">
                         <div className="become-teacher__form">
                             <div className="become-teacher__form-top">
                                 <h2 className="become-teacher__form-title">
-                                    Aqui Registrate
+                                    Aquí Regístrate
                                 </h2>
                             </div>
-                            <form action="#" method="POST" className="become-teacher__form-content contact-form-validated">
-                                <input type="text" placeholder="Nombre completo" name="name" />
-                                <input type="text" placeholder="Email" name="email" />
-                                <input type="text" placeholder="Telefono" name="phone" />
-                                <input type="text" placeholder="Sugerencias" name="message" />
+                            <form
+                            onSubmit={enviarFormulario}
+                            className="become-teacher__form-content contact-form-validated"
+                            >
+                                <input 
+                                onChange={formularioSeleccionado} 
+                                type="text" 
+                                placeholder="Nombres" 
+                                name="nombres" 
+                                required/>
+
+                                <input 
+                                type="text" 
+                                onChange={formularioSeleccionado} 
+                                placeholder="Apellidos" 
+                                name="apellidos" required/>
+
+                                <input type="text"
+                                onChange={formularioSeleccionado}  
+                                placeholder="Email" 
+                                name="email" required/>
+
+                                <input 
+                                type="text" 
+                                placeholder="Telefono" 
+                                name="telefono" 
+                                onChange={formularioSeleccionado}  
+                                required/>
+
+                                <div className="form-check frm-radio">
+                                    <input 
+                                    className="form-check-input frm-radio" 
+                                    type="radio" 
+                                    name="formulario" 
+                                    id="exampleRadios1" 
+                                    value="estudiante"
+                                    onChange={formularioSeleccionado} 
+                                     
+                                    />
+                                    <label className="form-check-label" htmlFor="exampleRadios1">
+                                        Querés Aprender
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input 
+                                    className="form-check-input frm-radio" 
+                                    type="radio" 
+                                    name="formulario" 
+                                    id="exampleRadios2"
+                                    onChange={formularioSeleccionado} 
+                                    value="docente" />
+                                    <label className="form-check-label" htmlFor="exampleRadios2">
+                                        Querés Enseñar
+                                    </label>
+                                </div>
+                         
+
+
+                                {/* <input type="text" placeholder="Sugerencias" name="message" /> */}
                                 <button type="submit"
-                                        className="thm-btn become-teacher__form-btn">Registrate Ahora
+                                        className="thm-btn become-teacher__form-btn"        
+                                        >Continua tu Registros
                                 </button>
+                                  {/* <div  className="btn_registro">
+                                 <a href="/formulario-estudiante" className="">Querés Aprender</a>
+                                 <a href="/formulario-docente" className="">Querés Enseñar</a>
+                                 </div> */}
                             </form>
                             <div className="result text-center"></div>
                         </div>

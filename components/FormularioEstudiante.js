@@ -3,7 +3,7 @@ import FormularioApoderado from './FormularioApoderado';
 
 
 
-const FormularioEstudiante = () => {
+const FormularioEstudiante = ({registro}) => {
     
 
     const [datosApoderado,guardarApoderado] = useState(false);
@@ -41,8 +41,7 @@ const FormularioEstudiante = () => {
          const valor = e.target.value;
          if(Number(valor) === 1 || Number(valor) === 2 )
          guardarNivel(true);
-         else guardarNivel(false);
-         
+         else guardarNivel(false);    
     }
 
 

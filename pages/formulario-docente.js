@@ -7,6 +7,7 @@ import FormularioDocente from "../components/FormularioDocente";
 
 
 const FormularioDocentePage = () => {
+
     return (
         <Layout pageTitle="Santa Cruz Educa">
              <Topbar />

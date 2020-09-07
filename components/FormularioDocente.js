@@ -1,7 +1,10 @@
 import React,{useState} from 'react';
 import InputDinamico from './InputDinamico';
 
-const FormularioDocente = () => {
+const FormularioDocente = (props) => { 
+
+    console.log(props);
+    
     /* inputs para poder generar dinamicametne 3 profesiones */
     const [inputUno , guardarInputUno ]= useState(false);
     const [inputDos, guardarInputdos ] = useState(false);
@@ -86,6 +89,20 @@ const FormularioDocente = () => {
             }
         };   
     }
+
+    // recuperar la informacion del registro
+    // if(registro !== null){
+    //     const { nombres,apellidos,email,telefono } = registro;
+    //     llenarInputs(nombres);
+    //     llenarInputs(apellidos);
+    //     llenarInputs(email);
+    //     llenarInputs(telefono);
+    // }
+
+    // const llenarInputs = (e, valor) =>{
+    //     [e.target.name ] = valor;
+    // }
+
     
 
 
@@ -98,7 +115,7 @@ const FormularioDocente = () => {
                 <div className="form-row">
                     <div className="form-group col-md-6">
                     <label htmlFor="Nombres">Nombres</label>
-                    <input type="text" className="form-control" id="Nombres"  />
+                    <input type="text" className="form-control" id="nombres"  />
                     <span className="asterisk_input">  </span>
                     </div>
                     <div className="form-group col-md-6">

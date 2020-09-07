@@ -6559,6 +6559,16 @@ html {
   z-index: 1;
 }
 
+.become-teacher__form input[type="radio"] {
+    height: unset;
+}
+
+@media (min-width:998px){
+  .countdown-one__content {
+    padding-top: 15rem;
+  }
+
+}
 
   
 

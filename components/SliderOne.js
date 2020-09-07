@@ -50,11 +50,10 @@ const SliderOne = () => {
                             <img src="/assets/images/profesor.png" className="banner-one__person" alt="" />
                             <div className="row no-gutters">
                                 <div className="col-xl-12">
-                                    <h3 className="banner-one__title banner-one__light-color">¿Quieres <br/>
+                                    <h3 className="banner-one__title banner-one__light-color">¿Querés <br/>
                                     Enseñar? </h3>
-                                    <p className="banner-one__tag-line">Estas Listo para 
-                                        Enseñar?</p>
-                                    <a href="#" className="thm-btn banner-one__btn">Aprende más</a>
+                                    <p className="banner-one__tag-line">Queres Compartir tus Conocimientos?</p>
+                                    <a href="/formulario-docente" className="thm-btn banner-one__btn">Aprende más</a>
                                 </div>
                             </div>
                         </div>
@@ -68,11 +67,11 @@ const SliderOne = () => {
                             <img src="/assets/images/alumnos.png" className="banner-one__person" alt="" />
                             <div className="row no-gutters">
                                 <div className="col-xl-12">
-                                    <h3 className="banner-one__title banner-one__light-color">¿Quieres<br />
+                                    <h3 className="banner-one__title banner-one__light-color">¿Querés<br />
                                     Aprender? </h3>
                                     <p className="banner-one__tag-line">Estas Listo para
                                     Aprender?</p>
-                                    <a href="#" className="thm-btn banner-one__btn">Aprende màs</a>
+                                    <a href="/formulario-estudiante" className="thm-btn banner-one__btn">Aprende más</a>
                                 </div>
                             </div>
                         </div>
