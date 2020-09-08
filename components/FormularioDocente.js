@@ -1,10 +1,27 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import InputDinamico from './InputDinamico';
+import Cookie from "js-cookie";
 
-const FormularioDocente = (props) => { 
+const FormularioDocente = () => { 
 
-    console.log(props);
-    
+
+    const [registro,guardarRegistro] = useState({
+        nombres: '',
+        apellidos: '',
+        email: '',
+        telefono: ''
+    });
+
+    const {nombres,apellidos,email,telefono} = registro;
+
+    const obtenerInformacion = e => {
+        guardarRegistro({
+            ...registro,
+            [e.target.name] : e.target.value
+        })
+    }
+
+
     /* inputs para poder generar dinamicametne 3 profesiones */
     const [inputUno , guardarInputUno ]= useState(false);
     const [inputDos, guardarInputdos ] = useState(false);
@@ -90,21 +107,29 @@ const FormularioDocente = (props) => {
         };   
     }
 
-    // recuperar la informacion del registro
-    // if(registro !== null){
-    //     const { nombres,apellidos,email,telefono } = registro;
-    //     llenarInputs(nombres);
-    //     llenarInputs(apellidos);
-    //     llenarInputs(email);
-    //     llenarInputs(telefono);
-    // }
+    useEffect(()=>{
+        const result = Cookie.getJSON('registro');
+        if(result !== undefined ){
+            console.log(result);
+            const {nombres,apellidos,email,telefono}  = result;
+            console.log(nombres);
+           actualizarRegistro(nombres,apellidos,email,telefono);
+        }
+        
+    },[]);
 
-    // const llenarInputs = (e, valor) =>{
-    //     [e.target.name ] = valor;
-    // }
+    const actualizarRegistro = (nm,ap,em,tl) => {
+        guardarRegistro({
+            nombres: nm,
+            apellidos: ap,
+            email: em,
+            telefono: tl
+        });
+    }
 
-    
 
+
+   
 
     return (  
 
@@ -115,12 +140,25 @@ const FormularioDocente = (props) => {
                 <div className="form-row">
                     <div className="form-group col-md-6">
                     <label htmlFor="Nombres">Nombres</label>
-                    <input type="text" className="form-control" id="nombres"  />
+                    <input 
+                    type="text" 
+                    className="form-control" 
+                    id="nombres"
+                    name="nombres"
+                    onChange={obtenerInformacion}
+                    value= {nombres} 
+                     />
                     <span className="asterisk_input">  </span>
                     </div>
                     <div className="form-group col-md-6">
                     <label htmlFor="PrimerApellido">Apellidos</label>
-                    <input type="text" className="form-control" id="PrimerApellido" />
+                    <input type="text" 
+                    className="form-control" 
+                    id="PrimerApellido"
+                    name="apellidos"
+                    onChange={obtenerInformacion}
+                    value={apellidos}
+                     />
                     <span className="asterisk_input">  </span>
                     </div>
                 </div>
@@ -128,12 +166,24 @@ const FormularioDocente = (props) => {
                 <div className="form-row">
                     <div className="form-group col-md-6">
                         <label htmlFor="Correo">Correo Electronico</label>
-                        <input type="email" className="form-control" id="correo" />
+                        <input type="email" 
+                        className="form-control" 
+                        id="correo" 
+                        name="email"
+                        onChange={obtenerInformacion}
+                        value={email}
+                        />
                         <span className="asterisk_input">  </span>
                     </div>
                     <div className="form-group col-md-6">
                     <label htmlFor="Telefono">Teléfono / Celular</label>
-                    <input type="text" className="form-control" id="Telefono" />
+                    <input type="text" 
+                    className="form-control" 
+                    id="Telefono"
+                    name="telefono"
+                    onChange={obtenerInformacion}
+                    value={telefono}
+                     />
                     <span className="asterisk_input">  </span>
                     </div>
                 </div>

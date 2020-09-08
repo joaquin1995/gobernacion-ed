@@ -16,7 +16,9 @@ import SubscribeOne from "../components/SubscribeOne";
 
 
 
+
 const HomePage = () => (
+
 
     <Layout pageTitle="Santa Cruz Educa">
       <Topbar />
@@ -35,7 +37,7 @@ const HomePage = () => (
       <SubscribeOne />
       <Footer />
     </Layout>
-
+ 
 )
 
 export default HomePage;

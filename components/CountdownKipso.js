@@ -1,4 +1,7 @@
 import React, {Component, useState} from 'react';
+import Cookie from "js-cookie";
+import cookieParse from 'cookie';
+import { parseCookies } from "../lib/parseCookies";
 import Link  from 'next/link';
 import { useRouter } from 'next/router';
 
@@ -27,7 +30,7 @@ const CountdownKipso = () => {
 
 
     const enviarFormulario = e =>{
-//   return <span onClick={() => router.push('/about')}>Click me</span>
+
 
         e.preventDefault();
        
@@ -39,14 +42,13 @@ const CountdownKipso = () => {
         }
 
         guardarError(false);
+       
+        Cookie.set('registro', registro);
 
-        // if(formulario === 'docente')  router.push('/formulario-docente');
-        // else router.push('/formulario-estudiante');
+        if(formulario === 'docente') router.push('/formulario-docente').then(() => window.scrollTo(0, 0));
+        else router.push('/formulario-estudiante').then(() => window.scrollTo(0, 0));;
 
-        if(formulario === 'docente') router.push('/formulario-docente',{ state: { id: 7, color: 'green' } });
-        else router.push('/formulario-estudiante');
-
-
+        
         
 
     }
@@ -151,4 +153,13 @@ const CountdownKipso = () => {
         </section>
     );
 }
+
+
+// CountdownKipso.getInitialProps = ({ req }) => {
+//     const cookies = parseCookies(req);
+   
+//     return {
+//       initialRememberValue: cookies.rememberMe
+//     };
+//   };
 export default CountdownKipso;

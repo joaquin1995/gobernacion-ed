@@ -424,7 +424,8 @@ a:visited {
   position: relative;
 }
 .header-navigation ul.navigation-box > li.current > a, .header-navigation ul.navigation-box > li:hover > a {
-  color: #f16101;
+  color: #bedb8b;
+  /* color: #f16101; */
 }
 .header-navigation ul.navigation-box > li > .sub-menu {
   position: absolute;
@@ -436,7 +437,8 @@ a:visited {
   padding: 0px 0px;
   text-align: left;
   list-style: none;
-  background-color: #012237;
+  /* background-color: #012237; */
+  background-color: #004631;
   background-clip: padding-box;
   opacity: 0;
   border-radius: 0px;
@@ -493,7 +495,9 @@ a:visited {
 }
 .header-navigation ul.navigation-box > li > .sub-menu > li:hover > a {
   color: #fff;
-  background: #f16101;
+  background: #bedb8b;
+  /* background: #f16101; */
+
 }
 .header-navigation ul.navigation-box > li:hover:before {
   -webkit-transform: scale(1, 1);
@@ -518,7 +522,9 @@ a:visited {
   padding: 0px 0px;
   text-align: left;
   list-style: none;
-  background-color: #012237;
+  /* background-color: #012237; */
+  background-color: #004631;
+
   background-clip: padding-box;
   opacity: 0;
   border-radius: 0px;
@@ -565,7 +571,8 @@ a:visited {
 }
 .header-navigation ul.navigation-box > li > ul > li > .sub-menu > li:hover > a {
   color: #fff;
-  background: #f16101;
+  background: #bedb8b;
+  /* background: #f16101; */
 }
 .header-navigation ul.navigation-box > li > ul > li:hover > .sub-menu {
   opacity: 1;
@@ -682,6 +689,7 @@ a:visited {
 }
 .header__social a:hover {
   color: #f16101;
+  /* color: #f16101; */
 }
 .header__social a + a {
   margin-left: 40px;
@@ -6561,6 +6569,10 @@ html {
 
 .become-teacher__form input[type="radio"] {
     height: unset;
+}
+
+.form-check {
+  position: unset;
 }
 
 @media (min-width:998px){

@@ -46,7 +46,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-desktop"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">IT & Software</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Artes y Humanidades</a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -55,7 +55,7 @@ const CourseCatOne = () => {
                                     {/* <i className="kipso-icon-professor"></i> */}
                                     <i className="fab fa-android"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Development</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Negocios</a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -63,7 +63,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-music-player"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Music</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Ciencia de la Computación</a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -71,7 +71,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-camera"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Photography</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Ciencia de los Datos</a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -79,7 +79,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-targeting"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Marketing</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Tecnologia de la Información</a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -95,7 +95,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-desktop"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">IT & Software</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Matemáticas y Lógicas</a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -103,7 +103,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-web-programming"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Development</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Desarrollo Personal</a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -111,7 +111,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-music-player"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Music</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Ciencias Físicas e Ingeniería</a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -119,7 +119,16 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-camera"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Photography</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Ciencias Sociales</a></h3>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="course-category-one__single color-4">
+                                <div className="course-category-one__icon">
+                                    <i className="kipso-icon-camera"></i>
+                                </div>
+                                <h3 className="course-category-one__title"><a href="#">Aprendisaje de un Idioma</a></h3>
                             </div>
                         </div>
                     </Swiper>
