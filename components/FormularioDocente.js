@@ -474,7 +474,7 @@ const FormularioDocente = () => {
                     </label>
                     </div>
                 </div> */}
-                <button type="submit" className="btn btn-primary">Guardar</button>
+                 <button type="submit" className="btn btn-dark">Registrar</button>
             </form>
       </div>
 

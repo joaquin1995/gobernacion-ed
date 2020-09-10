@@ -95,7 +95,7 @@ class NavOne extends Component {
                                     <li><Link href="/santa-cruz"><a>¿Qué es Santa Cruz Educa?</a></Link></li>
 
                                         <li><Link href="/quienes-somos"><a>¿Quiénes Somos?</a></Link></li>
-                                        <li><Link href="/index-2"><a>Nuestros Aliados</a></Link></li>
+                                        <li><Link href="/aliados"><a>Nuestros Aliados</a></Link></li>
                                         {/* <li><Link href="/index-3"><a>Home 03</a></Link></li> */}
                                         {/* <li><a href="#">Header Versions</a>
                                             <ul className="sub-menu">

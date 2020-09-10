@@ -1,6 +1,9 @@
 import React from 'react';
-
-const CourseDetails = () => {
+import { useRouter } from 'next/router'
+const CourseDetails = ({query})  => {
+    const router = useRouter()
+    const nm = router.query.nombre;
+  
     return (
         <section className="course-details">
             <div className="container">
@@ -14,7 +17,7 @@ const CourseDetails = () => {
 
                             <div className="course-details__top">
                                 <div className="course-details__top-left">
-                                    <h2 className="course-details__title">Improve editing skills</h2>
+                                    <h2 className="course-details__title">Titulo del Curso</h2>
                                     <div className="course-one__stars">
                                         <span className="course-one__stars-wrap">
                                             <i className="fa fa-star"></i>
@@ -28,7 +31,7 @@ const CourseDetails = () => {
                                     </div>
                                 </div>
                                 <div className="course-details__top-right">
-                                    <a href="#" className="course-one__category">marketing</a>
+                                    <a href="#" className="course-one__category">{nm}</a>
                                 </div>
                             </div>
                             <div className="course-one__image">
@@ -429,5 +432,8 @@ const CourseDetails = () => {
         </section>
     );
 };
+
+
+
 
 export default CourseDetails;

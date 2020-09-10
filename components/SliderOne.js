@@ -46,7 +46,7 @@ const SliderOne = () => {
                             <div className="banner-one__bubble-1"></div>
                             <div className="banner-one__bubble-2"></div>
                             <div className="banner-one__bubble-3"></div>
-                            <img src="/assets/images/manchaverdepag.png" alt="" className="banner-one__scratch" />
+                            {/* <img src="/assets/images/manchaverdepag.png" alt="" className="banner-one__scratch" /> */}
                             <img src="/assets/images/profesor.png" className="banner-one__person" alt="" />
                             <div className="row no-gutters">
                                 <div className="col-xl-12">
@@ -63,7 +63,7 @@ const SliderOne = () => {
                             <div className="banner-one__bubble-1"></div>
                             <div className="banner-one__bubble-2"></div>
                             <div className="banner-one__bubble-3"></div>
-                            <img src="/assets/images/manchaverdepag.png" alt="" className="banner-one__scratch" />
+                            {/* <img src="/assets/images/manchaverdepag.png" alt="" className="banner-one__scratch" /> */}
                             <img src="/assets/images/alumnos.png" className="banner-one__person" alt="" />
                             <div className="row no-gutters">
                                 <div className="col-xl-12">

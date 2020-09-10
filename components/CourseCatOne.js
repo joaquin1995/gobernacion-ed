@@ -46,7 +46,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-desktop"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Artes y Humanidades</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Artes y Humanidades <br /> <br /></a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -55,7 +55,7 @@ const CourseCatOne = () => {
                                     {/* <i className="kipso-icon-professor"></i> */}
                                     <i className="fab fa-android"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Negocios</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Negocios  <br /> <br /></a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -71,7 +71,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-camera"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Ciencia de los Datos</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Ciencia de los Datos  <br /> <br /></a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -87,7 +87,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-health"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Salud</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Salud  <br /> <br /></a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -95,7 +95,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-desktop"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Matemáticas y Lógicas</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Matemáticas y Lógicas <br /> <br /></a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -103,7 +103,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-web-programming"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Desarrollo Personal</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Desarrollo Personal  <br /> <br /></a></h3>
                             </div>
                         </div>
                         <div className="item">
@@ -119,7 +119,7 @@ const CourseCatOne = () => {
                                 <div className="course-category-one__icon">
                                     <i className="kipso-icon-camera"></i>
                                 </div>
-                                <h3 className="course-category-one__title"><a href="#">Ciencias Sociales</a></h3>
+                                <h3 className="course-category-one__title"><a href="#">Ciencias Sociales  <br /> <br /></a></h3>
                             </div>
                         </div>
 
