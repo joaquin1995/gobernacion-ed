@@ -122,7 +122,7 @@ class NavOne extends Component {
                                         <li><Link href="/course-details"><a>Courses Details</a></Link></li>
                                     </ul> */}
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href="/teachers"><a>Biblioteca Digital</a></Link>
                                     <ul className="sub-menu">
                                     <li><a href="#">Salud</a>
@@ -152,17 +152,17 @@ class NavOne extends Component {
 
                                      
                                     </ul>
-                                </li>
-                                <li>
+                                </li> */}
+                                {/* <li>
                                     <Link href="/calendario-digital"><a>Calendario Digital</a></Link>
-                                    {/* <ul className="sub-menu">
+                                    <ul className="sub-menu">
                                         <li><Link href="/news"><a>News Page</a></Link></li>
                                         <li><Link href="/news-details"><a>News Details</a></Link></li>
-                                    </ul> */}
-                                </li>
-                                <li>
+                                    </ul>
+                                </li> */}
+                                {/* <li>
                                     <Link href="/contact"><a>Noticias</a></Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                         <div className="right-side-box">

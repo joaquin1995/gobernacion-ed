@@ -41,8 +41,13 @@ const CourseOne = () => {
         <section className="course-one__top-title home-one">
             <div className="container">
                 <div className="block-title mb-0">
-                    <h2 className="block-title__title">Próximos <br />
-                        Cursos</h2>
+                    <h2 className="block-title__title">¿Quiénes somos?</h2>
+                    <br />
+                    <br />
+
+                        <p className="text_quienes_somos">
+                        Santa Cruz Educa es una iniciativa del Gobierno Autónomo Departamental de Santa Cruz en alianza con distintas instituciones y organizaciones internacionales, nacionales y locales. Este emprendimiento está y seguirá abierto a involucrar apoyos individuales y colectivos.
+                        </p>
                 </div>
             </div>
             <div className="course-one__top-title__curve"></div>

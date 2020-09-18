@@ -8,7 +8,7 @@ const Footer = () => {
         return (
             <div>
                 <footer className="site-footer">
-                    <div className="site-footer__upper">
+                    {/* <div className="site-footer__upper">
                         <div className="container">
                             <div className="row">
                                 <div className="col-xl-3 col-lg-6 col-sm-12">
@@ -72,7 +72,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="site-footer__bottom">
                         <div className="container">
                             <p className="site-footer__copy">&copy; Copyright 2020 by <a href="#">Gobernacion de Santa Cruz</a></p>
@@ -82,10 +82,10 @@ const Footer = () => {
                                     className="kipso-icon-top-arrow"></i></div>
 
 
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-facebook-square"></i></a>
-                                <a href="#"><i className="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i className="fab fa-instagram"></i></a>
+<a href="https://twitter.com/SantaCruz_Educa" target="_blank"><i className="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/Santa-Cruz-Educa-106363994528087" target="_blank"><i className="fab fa-facebook-square"></i></a>
+                                {/* <a href="#"><i className="fab fa-pinterest-p"></i></a> */}
+                                <a href="https://www.instagram.com/santacruzeduca/" target="_blank" ><i className="fab fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,9 @@ import NavOne from "../components/NavOne";
 import SliderOne from "../components/SliderOne";
 import Footer from "../components/Footer";
 import AboutTwo from "../components/AboutTwo";
+import ComoFuncionaPrincipal from '../components/ComoFuncionaPrincipal';
+import QuienesSomosPrincipal from '../components/QuienesSomosPrincipal';
+import NuestrosAliadosPrincipal from '../components/NuestrosAliadosPrincipal';
 import CourseOne from "../components/CourseOne";
 import VideoTwo from "../components/VideoTwo";
 import CountdownKipso from "../components/CountdownKipso";
@@ -24,17 +27,19 @@ const HomePage = () => (
       <Topbar />
       <NavOne />
       <SliderOne />
-      <CountdownKipso />
-      <AboutTwo />
-      <CourseOne />
+      {/* <CountdownKipso /> */}
+      <ComoFuncionaPrincipal />
+      <QuienesSomosPrincipal />
+      <NuestrosAliadosPrincipal />
+      {/* <CourseOne /> */}
       {/* <VideoTwo /> */}
       {/* <CountdownKipso /> */}
-      <CourseCatOne />
+      {/* <CourseCatOne /> */}
       {/* <CallToActionThree /> */}
       {/* <BrandsTwo /> */}
-      <BlogTwo />
+      {/* <BlogTwo /> */}
       <CallToActionFour />
-      <SubscribeOne />
+      {/* <SubscribeOne /> */}
       <Footer />
     </Layout>
  

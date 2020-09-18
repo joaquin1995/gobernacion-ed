@@ -7,10 +7,10 @@ class Topbar extends Component {
                 <div className="container">
 
                 <div className="header__social">
-                                <a href="#"><i className="fab fa-twitter"></i></a>
-                                <a href="#"><i className="fab fa-facebook-square"></i></a>
+                                <a href="https://twitter.com/SantaCruz_Educa" target="_blank"><i className="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/Santa-Cruz-Educa-106363994528087" target="_blank"><i className="fab fa-facebook-square"></i></a>
                                 {/* <a href="#"><i className="fab fa-pinterest-p"></i></a> */}
-                                <a href="#"><i className="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/santacruzeduca/" target="_blank" ><i className="fab fa-instagram"></i></a>
                     </div>
                     {/* <div className="topbar-one__left">
                         <a href="#">needhelp@kipso.com</a>
